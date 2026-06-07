@@ -295,53 +295,43 @@
             Seed / Oil / Free
         </div>
     </header>
-    <section class="py-16 bg-brandTan border-b-4 border-brandBrown flex items-center justify-center" aria-label="Flavor Vision Carousel" data-section="carousel">
-        <div class="absolute inset-0 z-0">
-          <img src="https://krowdimg.b-cdn.net/clients/beef-bird/Screenshot%202026-06-03%20at%206.47.22%E2%80%AFPM.png" alt="Beef &amp; Bird Gourmet Sandwiches" class="w-full h-full object-cover" referrerpolicy="no-referrer" />
-          <div class="absolute inset-0 bg-gradient-to-b from-brandBrown/95 via-brandBrown/85 to-brandBrown/95 mix-blend-multiply"></div>
-          <div class="absolute inset-0 bg-brandPlum/25 mix-blend-color-burn"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="border-4 border-brandBrown shadow-hard flex flex-col lg:flex-row overflow-hidden rounded-xl bg-brandTanLight relative">
-                <div class="relative lg:w-1/2 overflow-hidden" aria-label="Image Carousel">
-                    <div class="absolute top-4 left-4 z-20">
-                        <span id="carousel-title" class="inline-block bg-brandPlum text-brandTanLight px-4 py-1 rounded font-black tracking-wide uppercase select-none shadow-hard-sm">Beef BBQ Atw</span>
+    <section class="py-16 bg-brandTan border-b-4 border-brandBrown" data-section="carousel">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="bg-brandTanLight border-4 border-brandBrown rounded-3xl p-6 sm:p-10 shadow-hard flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <div class="w-full lg:w-1/2 relative group">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border-4 border-brandBrown shadow-hard-plum bg-brandBrown">
+                    <div id="carousel-title" class="absolute top-4 left-4 z-20 bg-brandPlum text-brandTanLight border-2 border-brandBrown px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest shadow-hard-sm transition-all duration-300">Beef BBq Atw</div>
+                    <div class="absolute inset-0 w-full h-full" id="vision-carousel">
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/1.jpg" alt="Beef BBq Atw" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/800x600/221915/D6C2A7?text=Beef+BBq+Atw'" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/2.jpg" alt="Beef Barbecue Sandwich" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/800x600/221915/D6C2A7?text=Beef+Barbecue+Sandwich'" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/3.jpg" alt="Italian Beef Poutine" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/800x600/221915/D6C2A7?text=Italian+Beef+Poutine'" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/4.jpg" alt="The Cold Shoulder" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/800x600/221915/D6C2A7?text=The+Cold+Shoulder'" />
                     </div>
-                    <!-- Slides -->
-                    <div class="relative h-72 lg:h-96" id="carousel-slides">
-                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/1.jpg" alt="Beef BBq Atw" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" referrerpolicy="no-referrer" />
-                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/2.jpg" alt="Beef Barbecue Sandwich" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" />
-                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/3.jpg" alt="Italian Beef Poutine" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" />
-                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/4.jpg" alt="The Cold Shoulder" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-brandBrown/45 via-transparent to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-4 right-4 flex items-center gap-2 z-10 bg-brandBrown/60 px-3.5 py-2 rounded-full backdrop-blur-sm">
+                        <span class="carousel-dot w-2.5 h-2.5 rounded-full bg-brandTanLight cursor-pointer transition-all duration-300" onclick="setSlide(0)"></span>
+                        <span class="carousel-dot w-2.5 h-2.5 rounded-full bg-brandTanLight/40 cursor-pointer transition-all duration-300" onclick="setSlide(1)"></span>
+                        <span class="carousel-dot w-2.5 h-2.5 rounded-full bg-brandTanLight/40 cursor-pointer transition-all duration-300" onclick="setSlide(2)"></span>
+                        <span class="carousel-dot w-2.5 h-2.5 rounded-full bg-brandTanLight/40 cursor-pointer transition-all duration-300" onclick="setSlide(3)"></span>
                     </div>
-                    <!-- Dot indicators -->
-                    <div class="absolute bottom-4 right-4 flex space-x-2 z-30">
-                        <button onclick="setSlide(0)" aria-label="Slide 1" class="w-3 h-3 bg-brandPlum rounded-full border-2 border-brandTanLight ring-2 ring-transparent focus:outline-none focus:ring-brandRed"></button>
-                        <button onclick="setSlide(1)" aria-label="Slide 2" class="w-3 h-3 bg-brandPlum rounded-full border-2 border-brandTanLight ring-2 ring-transparent focus:outline-none focus:ring-brandRed"></button>
-                        <button onclick="setSlide(2)" aria-label="Slide 3" class="w-3 h-3 bg-brandPlum rounded-full border-2 border-brandTanLight ring-2 ring-transparent focus:outline-none focus:ring-brandRed"></button>
-                        <button onclick="setSlide(3)" aria-label="Slide 4" class="w-3 h-3 bg-brandRed rounded-full border-2 border-brandTanLight ring-2 ring-transparent focus:outline-none focus:ring-brandPlum"></button>
-                    </div>
-                    <span class="absolute -bottom-4 -left-4 inline-block bg-brandRed text-brandTanLight text-[9px] font-black uppercase px-2 py-1 rounded shadow-hard-sm select-none">100% Beef Tallow Fried</span>
                 </div>
-                <div class="lg:w-1/2 p-8 flex flex-col justify-center space-y-6">
-                    <span class="text-brandRed font-black uppercase tracking-widest text-sm select-none">Flavor Vision</span>
-                    <h2 class="text-4xl font-black font-serif text-brandBrown leading-tight">The Gourmet Sandwich Vision</h2>
-                    <p class="text-brandBrown font-semibold">
-                        At Beef & Bird, we envision the perfect fusion of premium ingredients and artisanal craftsmanship to create unforgettable sandwiches. Our commitment to no seed oils ensures superior flavor and health-conscious choices.
-                    </p>
-                    <p class="text-brandBrown font-semibold">
-                        Every bite reflects our passion for culinary excellence, from hand-trimmed cuts to local rolls, delivered fresh daily.
-                    </p>
-                    <ul class="space-y-3 list-none text-brandBrown font-bold">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-brandPlum"></i> Hand-Trimmed daily</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-brandPlum"></i> Heidelburg Round Rolls</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-brandPlum"></i> Chemical-Free Tallow</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-brandPlum"></i> No Seed Oils Ever</li>
-                    </ul>
+                <div class="absolute -bottom-4 -left-4 bg-brandRed text-brandTanLight border-2 border-brandBrown px-4 py-2 rounded-xl text-[11px] font-black uppercase tracking-wider shadow-hard-sm z-10">100% Beef Tallow Fried</div>
+            </div>
+            <div class="w-full lg:w-1/2 space-y-6">
+                <span class="text-[10px] uppercase tracking-widest bg-brandPlum text-brandTanLight px-3.5 py-1.5 border-2 border-brandBrown rounded-xl font-black">Flavor Vision</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-black text-brandBrown leading-tight">The Gourmet Sandwich Vision</h2>
+                <p class="text-brandBrown font-bold text-base leading-relaxed">At 106 Genesee St., Beef &amp; Bird is redefining how Utica dines. From tender, slow-roasted USDA choice beef slices dunked in rich natural roasting juices, to golden-crisp buttermilk-marinated fried chicken.</p>
+                <p class="text-sm font-semibold text-brandBrown/80">Our gourmet offerings (cycled in the preview) are crafted with clean, honest ingredients on locally baked Heidelburg rolls or our house artisan breads. Real, authentic comfort food without cheap industrial seed oils.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-xs font-black uppercase tracking-wider">
+                    <div class="flex items-center gap-2"><i class="fas fa-check-double text-brandRed"></i> Hand-Trimmed daily</div>
+                    <div class="flex items-center gap-2"><i class="fas fa-check-double text-brandPlum"></i> Heidelburg Round Rolls</div>
+                    <div class="flex items-center gap-2"><i class="fas fa-check-double text-brandRed"></i> Chemical-Free Tallow</div>
+                    <div class="flex items-center gap-2"><i class="fas fa-check-double text-brandPlum"></i> No Seed Oils Ever</div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <section id="hours" class="py-24 bg-brandTanLight border-b-4 border-brandBrown" aria-label="Hours and Location" data-section="hours-location">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
             <div class="lg:col-span-6 bg-brandTan border-4 border-brandBrown shadow-hard rounded-xl p-8 flex flex-col items-center">
