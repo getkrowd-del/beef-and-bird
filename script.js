@@ -18,6 +18,36 @@ tailwind.config = {
             }
         }
 
+let bbChatOpen = false;
+  let bbPopoutHidden = false;
+
+  function toggleBBChat() {
+    const frame = document.getElementById('bb-chat-frame-container');
+    const popout = document.getElementById('bb-chat-popout');
+    bbChatOpen = !bbChatOpen;
+    if (bbChatOpen) {
+      frame.classList.add('open');
+      popout.style.opacity = '0';
+      bbPopoutHidden = true;
+    } else {
+      frame.classList.remove('open');
+      popout.style.opacity = '1';
+      bbPopoutHidden = false;
+    }
+  }
+
+  // Auto-hide popout after 6 seconds if not clicked
+  setTimeout(() => {
+    if (!bbPopoutHidden) {
+      const popout = document.getElementById('bb-chat-popout');
+      if (popout) {
+        popout.style.transition = 'opacity 0.5s ease';
+        popout.style.opacity = '0';
+        setTimeout(() => { popout.style.display = 'none'; }, 500);
+      }
+    }
+  }, 6000);
+
 const menuData = {
             bullpen: [
                 {name:"Bagg's Square Beef",description:"Our classic house roasted beef dunked in jus, piled high on a toasted Heidelburg Round Roll.",tag:"Slow Roasted Daily",fat:"100% Beef Tallow Jus",colorClass:"brandPlum",price:"10"},
