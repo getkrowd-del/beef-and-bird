@@ -1,0 +1,12 @@
+::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #D6C2A7; }
+        ::-webkit-scrollbar-thumb { background: #221915; border: 2px solid #D6C2A7; border-radius: 6px; }
+        ::-webkit-scrollbar-thumb:hover { background: #612B58; }
+        .kraft-texture { background-color: #D6C2A7; background-image: radial-gradient(rgba(34, 25, 21, 0.15) 0.5px, transparent 0.5px), radial-gradient(rgba(34, 25, 21, 0.15) 0.5px, #D6C2A7 0.5px); background-size: 20px 20px; background-position: 0 0, 10px 10px; }
+        .outline-thick { border: 3px solid #221915; }
+        .shadow-hard { box-shadow: 6px 6px 0px 0px #221915; }
+        .shadow-hard-plum { box-shadow: 6px 6px 0px 0px #612B58; }
+        .shadow-hard-red { box-shadow: 6px 6px 0px 0px #C1272D; }
+        .shadow-hard-sm { box-shadow: 3px 3px 0px 0px #221915; }
+        @keyframes subtle-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+        .animate-subtle { animation: subtle-bounce 4s ease-in-out infinite; }
