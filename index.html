@@ -265,7 +265,8 @@
             </div>
         </div>
     </nav>
-    <header class="relative min-h-[92vh] overflow-hidden py-24 text-brandTanLight" data-section="hero" style="background-image: linear-gradient(rgba(37,18,43,0.85), rgba(37,18,43,0.85)), linear-gradient(color-burn, rgba(97,43,88,0.25)), url('https://krowdimg.b-cdn.net/clients/beef-bird/Screenshot%202026-06-03%20at%206.47.22%E2%80%AFPM.png'); background-blend-mode:overlay, color-burn; background-size: cover; background-position: center;">
+    <header class="relative min-h-[92vh] overflow-hidden py-24 text-brandTanLight flex items-center justify-center" data-section="hero">
+        <div class="absolute inset-0 z-0 overflow-hidden"><img src="https://krowdimg.b-cdn.net/clients/beef-bird/Screenshot%202026-06-03%20at%206.47.22%E2%80%AFPM.png" alt="Hero background" class="w-full h-full object-cover" referrerpolicy="no-referrer" /><div class="absolute inset-0" style="background: linear-gradient(rgba(34,25,21,0.9), rgba(34,25,21,0.8));"></div></div>
         <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
             <span class="inline-flex bg-brandPlum -rotate-1 px-4 py-1 text-sm font-bold tracking-wide rounded-sm items-center gap-2 select-none shadow-hard">
                 <span class="w-3 h-3 bg-brandRed rounded-full animate-pulse"></span>
@@ -294,19 +295,24 @@
             Seed / Oil / Free
         </div>
     </header>
-    <section class="py-16 bg-brandTan border-b-4 border-brandBrown" aria-label="Flavor Vision Carousel" data-section="carousel">
-        <div class="max-w-7xl mx-auto px-6">
+    <section class="py-16 bg-brandTan border-b-4 border-brandBrown flex items-center justify-center" aria-label="Flavor Vision Carousel" data-section="carousel">
+        <div class="absolute inset-0 z-0">
+          <img src="https://krowdimg.b-cdn.net/clients/beef-bird/Screenshot%202026-06-03%20at%206.47.22%E2%80%AFPM.png" alt="Beef &amp; Bird Gourmet Sandwiches" class="w-full h-full object-cover" referrerpolicy="no-referrer" />
+          <div class="absolute inset-0 bg-gradient-to-b from-brandBrown/95 via-brandBrown/85 to-brandBrown/95 mix-blend-multiply"></div>
+          <div class="absolute inset-0 bg-brandPlum/25 mix-blend-color-burn"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="border-4 border-brandBrown shadow-hard flex flex-col lg:flex-row overflow-hidden rounded-xl bg-brandTanLight relative">
                 <div class="relative lg:w-1/2 overflow-hidden" aria-label="Image Carousel">
                     <div class="absolute top-4 left-4 z-20">
                         <span id="carousel-title" class="inline-block bg-brandPlum text-brandTanLight px-4 py-1 rounded font-black tracking-wide uppercase select-none shadow-hard-sm">Beef BBQ Atw</span>
                     </div>
                     <!-- Slides -->
-                    <div class="relative h-72 lg:h-auto" id="carousel-slides">
-                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/1.jpg" alt="Beef BBq Atw" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" />
-                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/2.jpg" alt="Beef Barbecue Sandwich" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
-                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/3.jpg" alt="Italian Beef Poutine" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
-                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/4.jpg" alt="The Cold Shoulder" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
+                    <div class="relative h-72 lg:h-96" id="carousel-slides">
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/1.jpg" alt="Beef BBq Atw" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" referrerpolicy="no-referrer" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/2.jpg" alt="Beef Barbecue Sandwich" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/3.jpg" alt="Italian Beef Poutine" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/4.jpg" alt="The Cold Shoulder" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" referrerpolicy="no-referrer" />
                     </div>
                     <!-- Dot indicators -->
                     <div class="absolute bottom-4 right-4 flex space-x-2 z-30">
