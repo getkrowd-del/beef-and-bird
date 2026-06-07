@@ -227,7 +227,7 @@
 </head>
 <body class="kraft-texture text-brandBrown font-sans selection:bg-brandPlum selection:text-brandTanLight overflow-x-hidden">
 
-    <nav class="sticky top-0 z-50 bg-brandTanLight border-b-4 border-brandBrown transition-all duration-300">
+    <nav class="sticky top-0 z-50 bg-brandTanLight border-b-4 border-brandBrown transition-all duration-300" data-section="navbar">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-3 group focus:outline-none">
                 <div class="w-16 h-16 bg-[#D2B48C] rounded-xl border-2 border-brandBrown flex items-center justify-center p-1 transition-transform group-hover:rotate-3 shadow-hard-sm overflow-hidden">
@@ -265,6 +265,322 @@
             </div>
         </div>
     </nav>
+    <header class="relative min-h-[92vh] overflow-hidden py-24 text-brandTanLight" style="background-image: linear-gradient(rgba(37,18,43,0.85), rgba(37,18,43,0.85)), linear-gradient(color-burn, rgba(97,43,88,0.25)), url('https://krowdimg.b-cdn.net/clients/beef-bird/Screenshot%202026-06-03%20at%206.47.22%E2%80%AFPM.png'); background-blend-mode:overlay, color-burn; background-size: cover; background-position: center;">
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+            <span class="inline-flex bg-brandPlum -rotate-1 px-4 py-1 text-sm font-bold tracking-wide rounded-sm items-center gap-2 select-none shadow-hard">
+                <span class="w-3 h-3 bg-brandRed rounded-full animate-pulse"></span>
+                Utica's First Seed Oil-Free Kitchen
+            </span>
+            <h1 class="mt-6 font-serif font-black leading-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+                Wholesome as it is<br />
+                <span class="italic text-brandRed">delicious.</span>
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-lg leading-relaxed font-semibold">
+                At Bagg's Square in downtown Utica. We craft premium French dips, slow-roasted beef, and hand-cut hormone-free chicken cooked exclusively in 100% chemical-free beef tallow, unrefined coconut oil, and real grass-fed butter.
+            </p>
+            <div class="mt-10 flex justify-center gap-6 flex-wrap">
+                <a href="#menu" class="bg-brandPlum px-8 py-3 rounded-xl uppercase tracking-wider font-extrabold shadow-hard-plum text-sm transition-colors hover:bg-brandRed focus:outline-none">Explore The Menu</a>
+                <a href="#hours" class="bg-brandTanLight text-brandBrown px-8 py-3 rounded-xl uppercase tracking-wider font-extrabold shadow-hard-sm flex items-center gap-2 text-sm transition-colors hover:bg-brandRed hover:text-brandTanLight focus:outline-none" title="Hours & Directions">
+                    <i class="fas fa-clock"></i> Hours &amp; Directions
+                </a>
+            </div>
+            <div class="mt-12 flex justify-center gap-8 text-xs font-black tracking-widest uppercase">
+                <span class="inline-block bg-brandBrown text-brandTan px-3 py-1 rounded shadow-hard-sm select-none">100% Chemical-Free Tallow</span>
+                <span class="inline-block bg-brandBrown text-brandTan px-3 py-1 rounded shadow-hard-sm select-none">Local Heidelburg Rolls</span>
+                <span class="inline-block bg-brandBrown text-brandTan px-3 py-1 rounded shadow-hard-sm select-none">0% Industrial Seed Oils</span>
+            </div>
+        </div>
+        <div class="absolute bottom-12 right-12 w-24 h-24 bg-brandPlum rounded-full rotate-12 animate-subtle shadow-hard-red flex items-center justify-center text-xs font-black uppercase select-none leading-tight text-brandTanLight px-3 text-center">
+            Seed / Oil / Free
+        </div>
+    </header>
+    <section class="py-16 bg-brandTan border-b-4 border-brandBrown" aria-label="Flavor Vision Carousel">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="border-4 border-brandBrown shadow-hard flex flex-col lg:flex-row overflow-hidden rounded-xl bg-brandTanLight relative">
+                <div class="relative lg:w-1/2 overflow-hidden" aria-label="Image Carousel">
+                    <div class="absolute top-4 left-4 z-20">
+                        <span id="carousel-title" class="inline-block bg-brandPlum text-brandTanLight px-4 py-1 rounded font-black tracking-wide uppercase select-none shadow-hard-sm">Beef BBQ Atw</span>
+                    </div>
+                    <!-- Slides -->
+                    <div class="relative h-72 lg:h-auto" id="carousel-slides">
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/1.jpg" alt="Beef BBQ Atw" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/2.jpg" alt="Beef Barbecue Sandwich" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/3.jpg" alt="Italian Beef Poutine" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
+                        <img src="https://krowdimg.b-cdn.net/clients/beef-bird/4.jpg" alt="The Cold Shoulder" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
+                    </div>
+                    <!-- Dot indicators -->
+                    <div class="absolute bottom-4 right-4 flex space-x-2 z-30">
+                        <button onclick="setSlide(0)" aria-label="Slide 1" class="w-3 h-3 bg-brandPlum rounded-full border-2 border-brandTanLight ring-2 ring-transparent focus:outline-none focus:ring-brandRed"></button>
+                        <button onclick="setSlide(1)" aria-label="Slide 2" class="w-3 h-3 bg-brandPlum rounded-full border-2 border-brandTanLight ring-2 ring-transparent focus:outline-none focus:ring-brandRed"></button>
+                        <button onclick="setSlide(2)" aria-label="Slide 3" class="w-3 h-3 bg-brandPlum rounded-full border-2 border-brandTanLight ring-2 ring-transparent focus:outline-none focus:ring-brandRed"></button>
+                        <button onclick="setSlide(3)" aria-label="Slide 4" class="w-3 h-3 bg-brandRed rounded-full border-2 border-brandTanLight ring-2 ring-transparent focus:outline-none focus:ring-brandPlum"></button>
+                    </div>
+                    <span class="absolute -bottom-4 -left-4 inline-block bg-brandRed text-brandTanLight text-[9px] font-black uppercase px-2 py-1 rounded shadow-hard-sm select-none">100% Beef Tallow Fried</span>
+                </div>
+                <div class="lg:w-1/2 p-8 flex flex-col justify-center space-y-6">
+                    <span class="text-brandRed font-black uppercase tracking-widest text-sm select-none">Flavor Vision</span>
+                    <h2 class="text-4xl font-black font-serif text-brandBrown leading-tight">The Gourmet Sandwich Vision</h2>
+                    <p class="text-brandBrown font-semibold">
+                        At Beef & Bird, we envision the perfect fusion of premium ingredients and artisanal craftsmanship to create unforgettable sandwiches. Our commitment to no seed oils ensures superior flavor and health-conscious choices.
+                    </p>
+                    <p class="text-brandBrown font-semibold">
+                        Every bite reflects our passion for culinary excellence, from hand-trimmed cuts to local rolls, delivered fresh daily.
+                    </p>
+                    <ul class="space-y-3 list-none text-brandBrown font-bold">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-brandPlum"></i> Hand-Trimmed daily</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-brandPlum"></i> Heidelburg Round Rolls</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-brandPlum"></i> Chemical-Free Tallow</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-brandPlum"></i> No Seed Oils Ever</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hours" class="py-24 bg-brandTanLight border-b-4 border-brandBrown" aria-label="Hours and Location">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-6 bg-brandTan border-4 border-brandBrown shadow-hard rounded-xl p-8 flex flex-col items-center">
+                <img src="https://krowdimg.b-cdn.net/clients/beef-bird/Screenshot%202026-06-03%20at%207.40.48%E2%80%AFPM.png" alt="Beef & Bird Logo" class="w-20 h-20 rounded-xl mb-6 object-contain" />
+                <h2 class="font-serif font-black text-3xl text-brandBrown tracking-tight uppercase select-none leading-none">BEEF &amp; BIRD</h2>
+                <span class="text-brandRed font-black uppercase text-xs tracking-widest mt-1 select-none">NO CLUCKS GIVEN</span>
+                <div class="flex items-center gap-4 mt-6">
+                    <span id="status-dot" class="inline-block w-4 h-4 rounded-full bg-brandRed shadow-hard-sm"></span>
+                    <span id="status-text" class="font-bold text-lg text-brandRed tracking-wide select-none">Closed</span>
+                </div>
+                <table class="mt-8 w-full text-brandBrown border-collapse text-sm font-semibold">
+                    <tbody>
+                        <tr>
+                            <td class="py-2 font-bold">Monday</td>
+                            <td class="py-2 text-brandRed font-black text-right">Closed</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-bold">Tuesday</td>
+                            <td class="py-2 text-right">11:00 AM – 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-bold">Wednesday</td>
+                            <td class="py-2 text-right">11:00 AM – 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-bold">Thursday</td>
+                            <td class="py-2 text-right">11:00 AM – 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-bold">Friday</td>
+                            <td class="py-2 text-right">11:00 AM – 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-bold">Saturday</td>
+                            <td class="py-2 text-right">12:00 PM – 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-bold">Sunday</td>
+                            <td class="py-2 text-brandRed font-black text-right">Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="lg:col-span-6 flex flex-col items-start">
+                <span class="inline-block bg-brandRed text-brandTan px-4 py-2 font-black uppercase tracking-wider rounded shadow-hard mb-6 select-none">Find Us in Bagg's Square</span>
+                <h2 class="text-5xl font-serif font-black text-brandBrown tracking-tight leading-tight mb-4">106 Genesee St.</h2>
+                <p class="font-semibold text-brandBrown max-w-md mb-4">
+                    Located at the heart of Utica's historic Bagg's Square district, Beef & Bird welcomes you to savor the finest flavors crafted with care and quality.
+                </p>
+                <address class="not-italic text-brandBrown font-bold mb-6 select-none">106 Genesee St, Utica, NY 13502</address>
+                <iframe class="w-full aspect-[16/9] rounded-lg border-4 border-brandBrown filter grayscale shadow-hard" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=106%20Genesee%20St,%20Utica,%20NY%2013502&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="Map to Beef &amp; Bird location"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="py-24 max-w-7xl mx-auto px-6" aria-label="Menu">
+        <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-5xl font-serif font-black text-brandBrown tracking-tight select-none">Official Menu Board</h2>
+            <span class="inline-block bg-brandRed text-brandTan text-xs font-black uppercase tracking-widest rounded px-4 py-2 mt-3 select-none shadow-hard-sm">Our Culinary Standards</span>
+            <blockquote class="bg-brandTanLight border-4 border-brandBrown rounded-xl text-brandBrown font-semibold text-sm leading-relaxed mt-8 max-w-3xl mx-auto px-8 py-6 shadow-hard">
+                We specialize in high-quality beef and chicken, locally sourced rolls and house-made fresh breads, and we fry exclusively in 100% chemical-free beef tallow. No seed oils are used in any part of our cooking process.
+            </blockquote>
+            <div class="mt-10 flex justify-center gap-6 flex-wrap">
+                <button id="tab-btn-bullpen" onclick="switchTab('bullpen')" class="px-6 py-3 rounded-xl font-extrabold text-xs uppercase tracking-widest shadow-hard-plum bg-brandPlum text-brandTanLight focus:outline-none transition-colors">The Bullpen (Beef)</button>
+                <button id="tab-btn-pecking" onclick="switchTab('pecking')" class="px-6 py-3 rounded-xl font-extrabold text-xs uppercase tracking-widest shadow-hard-red bg-brandRed text-brandTanLight focus:outline-none transition-colors">The Pecking Order (Bird)</button>
+                <button id="tab-btn-fries-sides" onclick="switchTab('fries-sides')" class="px-6 py-3 rounded-xl font-extrabold text-xs uppercase tracking-widest shadow-hard bg-brandBrown text-brandTanLight focus:outline-none transition-colors">Fries &amp; Side Hustles</button>
+            </div>
+            <div id="menu-container" class="mt-14 grid grid-cols-3 gap-8 text-brandBrown"></div>
+            <p class="mt-10 text-center text-xs font-semibold max-w-lg mx-auto select-none">
+                All prices listed are cash prices. A non-cash adjustment of up to 4% is applied to credit card purchases.
+            </p>
+        </div>
+    </section>
+    <section id="difference" class="py-24 bg-brandTanLight border-b-4 border-brandBrown" aria-label="Seed Oil Difference">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-serif font-black text-brandBrown tracking-tight select-none">Why Seed Oil-Free?</h2>
+            <blockquote class="mt-3 italic text-brandRed font-bold max-w-xl mx-auto">
+                "I believe it's time to start paying attention to what we're eating, what's in the ingredients."
+            </blockquote>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-brandPlum shadow-hard-plum rounded-xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-brandTan text-2xl font-black uppercase tracking-wider flex items-center gap-3 select-none">
+                            <i class="fas fa-shield-alt"></i> What We Cook With
+                        </h3>
+                        <div class="mt-6 space-y-6">
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-cow text-brandTan text-3xl"></i>
+                                <div>
+                                    <h4 class="text-brandTanLight font-bold uppercase tracking-wide text-sm">Beef Tallow</h4>
+                                    <p class="text-brandTanLight text-xs">Rich in flavor and naturally stable for cooking.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="text-brandTan text-3xl" aria-hidden="true">
+                                    <rect width="24" height="18" y="3" rx="3" ry="3" fill="currentColor"/>
+                                    <path stroke="#221915" stroke-width="2" d="M4 10h16M4 14h16"/>
+                                </svg>
+                                <div>
+                                    <h4 class="text-brandTanLight font-bold uppercase tracking-wide text-sm">Real Butter</h4>
+                                    <p class="text-brandTanLight text-xs">Pure, grass-fed, adding rich creaminess.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-egg text-brandTan text-3xl"></i>
+                                <div>
+                                    <h4 class="text-brandTanLight font-bold uppercase tracking-wide text-sm">Coconut Oil</h4>
+                                    <p class="text-brandTanLight text-xs">Unrefined and chemical-free for deep flavor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <span class="inline-block bg-brandRed text-brandTanLight font-black uppercase tracking-wide rounded px-3 py-1 select-none shadow-hard-sm">100% Wholesome Comfort</span>
+                    </div>
+                </div>
+                <div class="bg-brandRed shadow-hard-red rounded-xl p-8 flex flex-col justify-between text-brandTanLight">
+                    <div>
+                        <h3 class="text-lg font-black uppercase tracking-wider flex items-center gap-3 select-none">
+                            <i class="fas fa-ban"></i> What We Never Touch
+                        </h3>
+                        <ul class="mt-6 space-y-6 text-sm font-extrabold list-none">
+                            <li class="flex items-center gap-4">
+                                <span class="inline-block w-3 h-3 bg-brandRed rounded-full flex-shrink-0 mt-[6px]"></span> Canola &amp; Rapeseed Oils 0% Present
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="inline-block w-3 h-3 bg-brandRed rounded-full flex-shrink-0 mt-[6px]"></span> Soybean &amp; Vegetable Oils 0% Present
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="inline-block w-3 h-3 bg-brandRed rounded-full flex-shrink-0 mt-[6px]"></span> Sunflower &amp; Corn Oils 0% Present
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <span class="inline-block bg-brandPlum text-brandTan font-black uppercase tracking-wide rounded px-3 py-1 select-none shadow-hard-sm">No Clucks Given to Cheap Fats</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-24 bg-brandTanLight border-t-4 border-brandBrown" aria-label="About Tucker Rosemyer">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-6 bg-brandBrown rounded-xl shadow-hard-plum p-8">
+                <div class="bg-brandTan rounded-xl p-6">
+                    <span class="inline-block bg-brandPlum text-brandTanLight font-black uppercase text-xs tracking-wider rounded-md px-3 py-1 select-none">30 Years of Culinary Legacy</span>
+                    <h3 class="mt-4 text-4xl font-serif font-black text-brandBrown leading-tight tracking-tight select-none">Tucker Rosemyer</h3>
+                    <p class="mt-6 text-brandBrown font-semibold leading-relaxed">
+                        Tucker’s passion for culinary excellence spans over three decades, shaping every bite served at Beef & Bird. His dedication to quality and flavor excellence brings a legacy of delicious innovation and unwavering standards.
+                    </p>
+                    <div class="mt-10 grid grid-cols-2 gap-8 text-brandPlum font-black uppercase text-xs select-none leading-tight">
+                        <div>
+                            <ul class="space-y-2 list-none">
+                                <li class="flex items-center gap-2"><i class="fas fa-check"></i> Slice Pizzeria</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check"></i> 1886 Prime</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check"></i> The Purple Cow</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="space-y-2 list-none">
+                                <li class="flex items-center gap-2"><i class="fas fa-check"></i> Tucker's Italian</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check"></i> Karma Piano Bar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6 flex flex-col justify-center">
+                <span class="inline-block bg-brandRed text-brandTanLight font-black uppercase text-xs tracking-wider rounded-md px-3 py-1 select-none mb-4">A Science and an Art</span>
+                <h2 class="italic text-brandBrown font-black text-4xl max-w-xl leading-tight tracking-tight select-none mb-6">I've got it down to a science.</h2>
+                <p class="text-brandBrown font-semibold leading-relaxed max-w-xl mb-8">
+                    My decades of experience have taught me that the perfect chicken sandwich and roast beef isn't just cooking — it’s precision, high-quality ingredients, and respect for tradition all working in harmony.
+                </p>
+                <span class="inline-flex items-center gap-3 bg-brandTan rounded-xl px-4 py-3 shadow-hard font-black text-brandBrown uppercase tracking-wide text-sm select-none max-w-max">
+                    <i class="fas fa-certificate"></i> No Shortcuts, Just Quality
+                </span>
+            </div>
+        </div>
+    </section>
+    <section id="science" class="py-24 max-w-7xl mx-auto px-6 border-t-4 border-brandBrown" aria-label="Cooking Science">
+        <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-5xl font-serif font-black text-brandBrown tracking-tight select-none">The Heat Stability Factor</h2>
+            <span class="inline-block bg-brandPlum text-brandTan px-4 py-2 font-bold tracking-wider uppercase rounded shadow-hard-sm mt-4 select-none">The Science of Flavor</span>
+            <div class="mt-12 border-4 border-brandBrown shadow-hard rounded-xl grid lg:grid-cols-12 overflow-hidden bg-brandTanLight text-brandBrown">
+                <div class="lg:col-span-4 bg-brandTan p-8 flex flex-col gap-6">
+                    <button id="sci-btn-tallow" onclick="setScienceFat('tallow')" class="flex items-center gap-4 px-6 py-3 rounded-xl font-black uppercase tracking-wide shadow-hard-plum text-brandTanLight bg-brandPlum focus:outline-none transition-colors">
+                        <i class="fas fa-cow text-lg"></i> Beef Tallow
+                    </button>
+                    <button id="sci-btn-butter" onclick="setScienceFat('butter')" class="flex items-center gap-4 px-6 py-3 rounded-xl font-black uppercase tracking-wide shadow-hard text-brandTanLight bg-brandBrown focus:outline-none transition-colors">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-brandTanLight"><rect width="24" height="18" y="3" rx="3" ry="3" fill="currentColor" /><path stroke="#221915" stroke-width="2" d="M4 10h16M4 14h16"/></svg> Real Butter
+                    </button>
+                    <button id="sci-btn-canola" onclick="setScienceFat('canola')" class="flex items-center gap-4 px-6 py-3 rounded-xl font-black uppercase tracking-wide shadow-hard-red text-brandTanLight bg-brandRed focus:outline-none transition-colors">
+                        <i class="fas fa-vial text-lg"></i> Canola/Seed Oil
+                    </button>
+                </div>
+                <div class="lg:col-span-8 bg-brandTan p-8 rounded-r-xl flex flex-col gap-6">
+                    <h4 id="sci-title" class="text-3xl font-bold font-serif text-brandBrown"></h4>
+                    <span id="sci-badge" class="inline-block px-4 py-1 font-black uppercase tracking-widest rounded select-none shadow-hard-sm max-w-max"></span>
+                    <div class="space-y-4">
+                        <div>
+                            <label for="sci-bar-smoke" class="font-bold tracking-wide select-none" id="label-smoke">Smoke Point</label>
+                            <div class="w-full bg-brandBrown rounded-full h-4 overflow-hidden relative mt-1 shadow-hard-sm">
+                                <div id="sci-bar-smoke" class="h-4 rounded-full bg-brandPlum transition-all"></div>
+                                <span id="sci-smoke-val" class="absolute right-2 top-0 text-xs font-black text-brandTanLight select-none"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="sci-bar-toxin" class="font-bold tracking-wide select-none" id="label-toxin">Toxin Level</label>
+                            <div class="w-full bg-brandBrown rounded-full h-4 overflow-hidden relative mt-1 shadow-hard-sm">
+                                <div id="sci-bar-toxin" class="h-4 rounded-full bg-brandPlum transition-all"></div>
+                                <span id="sci-toxin-val" class="absolute right-2 top-0 text-xs font-black text-brandTanLight select-none"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sci-desc" class="text-sm font-semibold leading-relaxed"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-brandTan border-t-4 border-brandBrown py-16" aria-label="Footer">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 text-brandBrown">
+            <div class="md:col-span-5 flex flex-col items-start gap-6">
+                <span class="text-4xl text-brandBrown"><i class="fas fa-certificate"></i></span>
+                <h2 class="font-serif font-black text-3xl select-none">BEEF &amp; BIRD</h2>
+                <p class="font-semibold max-w-sm">At Beef & Bird, we cherish quality, tradition, and Utica’s spirit in every dish we create.</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=61571373757017" target="_blank" class="hover:text-brandRed transition-colors" aria-label="Facebook"><i class="fab fa-facebook-f text-2xl"></i></a>
+                    <a href="https://www.instagram.com/beefandbird/" target="_blank" class="hover:text-brandPlum transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="md:col-span-3 flex flex-col items-start gap-4">
+                <h3 class="font-black uppercase tracking-wide select-none">Main Navigation</h3>
+                <nav class="flex flex-col space-y-2 text-sm font-semibold">
+                    <a href="#about" class="hover:text-brandRed transition-colors focus:outline-none">Our Mission</a>
+                    <a href="#menu" class="hover:text-brandPlum transition-colors focus:outline-none">The Menu</a>
+                    <a href="#hours" class="hover:text-brandRed transition-colors focus:outline-none">Hours &amp; Location</a>
+                    <a href="#difference" class="hover:text-brandRed transition-colors focus:outline-none">Seed Oil-Free</a>
+                </nav>
+            </div>
+            <div class="md:col-span-4 flex flex-col items-start gap-6 text-sm font-semibold max-w-md">
+                <h3 class="font-black uppercase tracking-wide select-none">Our Promise to Utica</h3>
+                <p>We pledge to serve only wholesome, meticulously prepared dishes using the finest ingredients, honoring our community’s health and taste buds.</p>
+                <span class="select-none">© 2026 Beef &amp; Bird Utica.</span>
+            </div>
+        </div>
+    </footer>
+    
 
   <script src="script.js"></script>
 </body>
