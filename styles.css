@@ -10,3 +10,93 @@
         .shadow-hard-sm { box-shadow: 3px 3px 0px 0px #221915; }
         @keyframes subtle-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
         .animate-subtle { animation: subtle-bounce 4s ease-in-out infinite; }
+
+#bb-chat-launcher {
+    position: fixed;
+    bottom: 28px;
+    left: 28px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  #bb-chat-bubble {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    cursor: pointer;
+  }
+  #bb-chat-popout {
+    background: #221915;
+    color: #F3EFE9;
+    padding: 10px 16px;
+    border-radius: 0 20px 20px 0;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    box-shadow: 4px 4px 0px #612B58;
+    border: 2px solid #D2B48C;
+    margin-left: -6px;
+    transition: opacity 0.3s ease;
+    line-height: 1.3;
+  }
+  #bb-chat-popout span {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #D2B48C;
+    margin-top: 1px;
+  }
+  #bb-chat-icon-btn {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #F3EFE9;
+    border: 3px solid #221915;
+    box-shadow: 4px 4px 0px #221915;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  #bb-chat-icon-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 6px 6px 0px #612B58;
+  }
+  #bb-chat-icon-btn img {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+  }
+  #bb-chat-frame-container {
+    position: fixed;
+    bottom: 115px;
+    left: 28px;
+    width: 370px;
+    height: 540px;
+    z-index: 99998;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #221915;
+    box-shadow: 6px 6px 0px #612B58;
+    display: none;
+    flex-direction: column;
+    background: #F3EFE9;
+  }
+  #bb-chat-frame-container.open {
+    display: flex;
+  }
+  #bb-chat-frame-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
